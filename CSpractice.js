@@ -42,3 +42,41 @@
 
 //forEach
 
+// create a function which takes an array and callback and rins callback on each element of aaray
+// function forEach(array, callback) {
+//   for( let i = 0; i < array.length; i++) {
+//    //iterate through the array with a for loop
+//     callback(array[i]); //invoke the callback function passing in the current array element
+//   } 
+// }
+
+    // function map(array, call){ //map funct takes two function and returns new array as the result of invoking function on each array
+    //   //initialize a new array
+    //   //call forEach with the passed in array and new function. Will take an array element.
+    //   //invoke the passed in callback function with the element array passed in by forEach
+    //   //add return value to array
+    //   //return array containing results
+    //   const results = [];
+    //   forEach(array, function(element) {//since its stored in global memory, dont need 'function' before. also only one parenthesis
+    //   	results.push(call(element))
+    // })
+    //   return results
+    // }
+
+
+//filter array
+
+    // function filterArray(array, callback) {
+    //     const newArray = [];//results go to new array
+    //     for (let i = 0; i < array.length; i += 1) { //loops through the array
+    //     if (callback(array[i])) newArray.push(array[i]);//
+    //     }
+    //     return newArray;
+    // }
+    // const arrOfNums = [1, 2, 3, 4, 5];
+    // function func1(num) {//use function logic to filter out even numbers 
+    // return (num % 2 === 0)
+    // }
+    // function func2(num) {//use function logic to filter out even numbers
+    //     return (num % 2 !== 0)
+    // }

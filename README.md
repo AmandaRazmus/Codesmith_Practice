@@ -48,3 +48,11 @@ Part 2
     Now let's rebuild map from the previous challenge. This time instead of using a for loop, you're going to use the forEach we just created.
     
 -----------------------------------------------------------------------------------------------------
+
+Challenge: filterArray
+
+Add code to the functions func1 and func2 in the places marked "ADD CODE HERE" in order to achieve the desired console logs.
+
+filterArray should be a function
+filterArray(arrOfNums, func1) should return [2, 4]
+filterArray(arrOfNums, func2) should return [1, 3, 5]
