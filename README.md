@@ -25,10 +25,6 @@ Challenge: map
     a 'callback' function - this function is applied to each element of the array (inside of the function 'map')
     Have your map function return a new array filled with numbers that are the result of using the 'callback' function on each element of the input array. Please do not use the native map or forEach method.
 
-        subtractTwo should be a function
-        map should be a function
-        map should return an array
-        map should execute a callback function on each element
 
 -----------------------------------------------------------------------------------------------------
 
@@ -53,6 +49,23 @@ Challenge: filterArray
 
 Add code to the functions func1 and func2 in the places marked "ADD CODE HERE" in order to achieve the desired console logs.
 
-filterArray should be a function
-filterArray(arrOfNums, func1) should return [2, 4]
-filterArray(arrOfNums, func2) should return [1, 3, 5]
+
+-----------------------------------------------------------------------------------------------------
+Challenge: eitherFilter
+
+    Add code to the function eitherFilter in the place marked "ADD CODE HERE" in order to achieve the desired console logs. The array returned from eitherFilter should contain all elements in the passed-in array that yield a truthy return value when passed into EITHER of the two callbacks passed into eitherFilter.
+
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: eitherCallback
+
+    Add code to the function eitherCallback in the place marked "ADD CODE HERE" in order to achieve the desired console logs. Notice that the lines of code testing your work are using functions and an array from previous challenges. The result of using eitherCallback to combine two callbacks into one callback and then passing that one callback into filterArray should match the results of simply passing the two callbacks into eitherFilter in the previous challenge.
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: reduce
+
+Construct your own reduce function that accepts an array, a callback, and an initial value and returns a single value.
+
+-----------------------------------------------------------------------------------------------------

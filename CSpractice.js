@@ -63,7 +63,7 @@
     //   return results
     // }
 
-
+//-----------------------------------------------------------------------------------------------------
 //filter array
 
     // function filterArray(array, callback) {
@@ -80,3 +80,81 @@
     // function func2(num) {//use function logic to filter out even numbers
     //     return (num % 2 !== 0)
     // }
+
+//-----------------------------------------------------------------------------------------------------
+// function eitherFilter(array, callback1, callback2) {
+//     // desired result in an array of numbers containing all elements in the passed-in array that yield a truthy value when passed into either of the two callbacks passed into eitherFilter
+//   const result = []; //result is an array
+//     //loop over the numbers in the array with a for loop
+//     for ( let i = 0; i < array.length; i++) {
+//       if (callback1(array[i]) || callback2(array[i])) result.push(array[i]);//will need logic for either/or
+//     }
+//     return result
+//   }
+    
+//     //callback 1 is the swuare root of the array number is odd 
+//     //callback 2 is the array number is over 100
+  
+  
+//   // Uncomment these to check your work!
+//   const arrOfNums = [10, 35, 105, 9];
+//   const integerSquareRoot = n => Math.sqrt(n) % 1 === 0;
+//   const over100 = n => n > 100;
+//   console.log(eitherFilter(arrOfNums, integerSquareRoot, over100)); // should log: [105, 9]
+// //-----------------------------------------------------------------------------------------------------
+// function eitherCallback(callback1, callback2) { //combines two callbcks into one callback and passes that one callback into filter array
+//     //return a funtion
+//     //return the boolean respresenting whether each callback is true
+//     return(element, i, array) => {//here element respresents array[i] below
+//       return callback1(element, i, array) || callback2(element, i, array)
+//     }
+//   }
+  
+//   // Uncomment these to check your work!
+//   function filterArray(array, callback) {
+//   const newArray = [];
+//   for (let i = 0; i < array.length; i += 1) {
+//   if (callback(array[i], i, array)) newArray.push(array[i]);//if the callback passed in is true, gets returned
+//   }
+//   return newArray;
+//   }
+//   const arrOfNums = [10, 35, 105, 9];
+//   const integerSquareRoot = n => Math.sqrt(n) % 1 === 0; //this is a function that checks if a number has a square root that is an integer
+//   const over100 = n => n > 100; //function returns true if a number is over 100
+//   const intSqRtOrOver100 = eitherCallback(integerSquareRoot, over100); //result of calling function above. We pass in two callbacks. Will return true if integerSquareRoot is true OR over100 is true. Then inSqRtOrOver100 gets used in filterArray which will iterate over array.
+//   console.log(filterArray(arrOfNums, intSqRtOrOver100)); // should log: [105, 9]
+
+// //-----------------------------------------------------------------------------------------------------
+
+//     // reduce
+//     // /reduce iterates through array and returns a single value
+//     // //create a reduce funtction that accespts an array, callback and inital value
+//     // //return a single value
+//     // const nums = [4, 1, 3];
+//     // const returnSingleValue = nums.reduce(function(total, add, nums){
+//     //   return a + b;
+//     // }, 0);
+    
+    
+//     // //iterate over the array
+//     // //set the acc to be the result of calling the callback with the arg acc, current elemnt
+//     // // Uncomment these to check your work!
+//     // // const nums = [4, 1, 3];
+//     // const add = function(a, b) { return a + b; }
+//     // console.log(reduce(nums, add, 0)); // should log 8
+    
+
+//     //-----------------------------------------------------------------------------------------------------
+
+//     //-----------------------------------------------------------------------------------------------------
+
+
+//     //-----------------------------------------------------------------------------------------------------
+
+//     //-----------------------------------------------------------------------------------------------------
+
+
+//     //-----------------------------------------------------------------------------------------------------
+
+
+//     //-----------------------------------------------------------------------------------------------------
