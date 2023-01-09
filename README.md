@@ -69,3 +69,47 @@ Challenge: reduce
 Construct your own reduce function that accepts an array, a callback, and an initial value and returns a single value.
 
 -----------------------------------------------------------------------------------------------------
+
+
+
+//************CLOSURE, SCOPE AND EXECUTION CONTEXT****************
+
+Challenge: createFunction
+
+    Create a function createFunction that creates and returns a function. When that newly created function is called, it should return the string 'hello world'.
+
+    const myFunction = createFunction();
+    // Let's call the function we created and log its return value
+    console.log(myFunction()); //should log: 'hello world'
+    When you think you completed createFunction, un-comment out those lines in the code and run it to see if it works.
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: createFunctionWithInput
+
+    Create a function createFunctionWithInput that accepts one input and returns a function. When that created function is called, it should return the input that was passed to createFunctionWithInput when it was created.
+
+    const sampleFunc = createFunctionWithInput('sample');
+    const helloFunc = createFunctionWithInput('hello');
+
+    // Now we'll call the functions we created and log the result
+    console.log(sampleFunc()); 
+    // should log 'sample' to the console
+    console.log(helloFunc());
+    // should log 'hello' to the console
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: Scoping
+
+Examine the code for the outer function. Notice that we are returning a function and that function is using variables that are outside of its scope. Uncomment those lines of code. Try to deduce the output before executing.
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: addByX
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+

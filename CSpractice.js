@@ -158,3 +158,76 @@
 
 
 //     //-----------------------------------------------------------------------------------------------------
+
+
+//************CLOSURE, SCOPE AND EXECUTION CONTEXT****************
+
+//Challenge: createFunction
+
+//create functioon createFunction
+    // function createFunction() {
+    //     //create new funtion
+    //     function printGreeting(){
+    //     //return string hello world
+    //     return 'hello world'
+    //     }
+    //     //return new function
+    //     return printGreeting //this returns pringGreeting into createFunction
+    // }
+    
+    
+    // // Uncomment these to check your work!
+    // const myFunction = createFunction();
+    // console.log(myFunction()); //should log: 'hello world'
+
+//-----------------------------------------------------------------------------------------------------
+
+//Challenge: createFunctionWithInput
+
+    // // //create a function createFunctionWithInput that accepts one input and returns a function
+    // function createFunctionWithInput(input) {
+    //     //create new function
+    // function printInput(){
+    //     return input
+    //     } 
+    // //return function
+    //     return printInput
+    // }
+
+    // // UNCOMMENT THESE TO TEST YOUR WORK!
+    // const sampleFunc = createFunctionWithInput('sample');
+    // console.log(sampleFunc()); // should log: 'sample'
+    // const helloFunc = createFunctionWithInput('hello');
+    // console.log(helloFunc()); // should log: 'hello'
+
+//-----------------------------------------------------------------------------------------------------
+
+//Challenge: Scoping
+
+    // function outer() {
+    //     let counter = 0; // this variable is outside incrementCounter's scope
+    //     function incrementCounter() {
+    //     counter++;
+    //     console.log('counter', counter);
+    //     }
+    //     return incrementCounter;
+    // }
+    
+    // const willCounter = outer();
+    // const jasCounter = outer();
+    
+    // //Uncomment each of these lines one by one.
+    // //Before your do, guess what will be logged from each function call.
+    
+    // willCounter();
+    // willCounter();
+    // willCounter();
+    
+    // jasCounter();
+    // willCounter();
+
+//-----------------------------------------------------------------------------------------------------
+
+
+
+//-----------------------------------------------------------------------------------------------------
