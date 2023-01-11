@@ -227,7 +227,75 @@
     // willCounter();
 
 //-----------------------------------------------------------------------------------------------------
+Challenege: addByX
 
+    // function addByX(x) {
+    //     //create function addByX that accepts an input
+    //      function addByTwo(num) {
+    //     //create a function that adds an input by x 
+    //         return num + x;
+    //       }
+    //       //return function
+    //         return addByTwo;
+    //     }
+        
+        
+    //     const addByTwo = addByX(2);
+        
+        
+    //     // Now call addByTwo with an input of 1 and log the output
+    //     console.log(addByTwo(1))
+    //     // Now call addByTwo with an input of 2 and log the output
+    //     console.log(addByTwo(2))
 
 
 //-----------------------------------------------------------------------------------------------------
+//Challenge: once 
+
+    // function once(cb) {
+    //     //write a function once that accepts a callback as input and returns a function
+    //     let hasBeenCalled = false;
+    //     //store a variable that lets js know if we have run the function
+    //     let cachedResult;
+    //     //create a cache that stores the output to be referenced when callback is called
+    //         function oncifiedCb(...args){
+    //         //if oncifiedCb hasn't been called: 
+    //         if (!hasBeenCalled){
+    //         cachedResult = cb(...args);
+    //         //1. invoke cb with args and store result in cachedResult
+    //                 //2. set hasBeenCalled to true
+    //         hasBeenCalled = true
+    //         return cachedResult
+    //         } else{ 
+    //         return cachedResult
+    //         //return cached result
+    //         }   
+    //     }
+    //         return oncifiedCb
+    //     }
+        
+        
+    //     const addByTwoOnce = once(function(num) {
+    //     return num + 2;
+    //     });
+        
+    //     // UNCOMMENT THESE TO TEST YOUR WORK!
+    //     console.log(addByTwoOnce(5));  //should log 7
+    //     console.log(addByTwoOnce(10));  //should log 7
+    //     console.log(addByTwoOnce(9001));  //should log 7
+    
+
+    //     //-----------------------------------------------------------------------------------------------------
+
+//     //-----------------------------------------------------------------------------------------------------
+
+
+//     //-----------------------------------------------------------------------------------------------------
+
+//     //-----------------------------------------------------------------------------------------------------
+
+
+//     //-----------------------------------------------------------------------------------------------------
+
+
+//     //-----------------------------------------------------------------------------------------------------
