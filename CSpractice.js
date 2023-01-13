@@ -20,23 +20,59 @@
 
 //map
 
-//second attempt for review
-// function subtractTwo(num){
-//     //create a function called subtractTwo that accepts a number
-//       return num - 2          
-//         //return the result of subtracting two from number
-//     }
-//         function map(arr,subtractTwo) {
-//     //create a function called map that takes two inputs, an array of numbers and a callback function
-//       let	newArray = [];
-//       for (let i = 0; i < arr.length; i++) {
-//       //create a for loop to loop over array
-//           newArray.push(subtractTwo(arr[i])) //*the function goes in front as the action onto the number in array
-//         }
-//       //put numbers into newArray after they have the instructions carried out on them
-//             return newArray //*dont forget to return outside of the for loop declaration
-//     //return new array filled with numbers that are result of using callback function on each element of array
-//       }
+// //second attempt for review
+// function forEach(arr,callback) {
+// 	//create a function forEach that takes an array and a callback
+// 	for (let i = 0; i < arr.length; i++) {
+// 	//use a for loop 
+//     callback(arr[i])
+//     //run the callback on each element of the array
+//    //nothing is returned
+// 	}
+// }
+
+// function map(arr,callback) {
+// //create a function called map that takes two inputs, an array of numbers and a callback function
+//   const results = [];
+//   forEach(array, function(element) //*the function goes in front as the action onto the number in array
+//   return results.push(callback(element))
+//   //put numbers into result after they have the instructions carried out on them	
+// })
+  
+// Uncomment these to check your work!
+// console.log(typeof forEach); // should log: 'function'
+// forEach(['a','b','c'], i => console.log(i)); // should log: 'a', 'b', 'c'
+// console.log(typeof map); // should log: 'function'
+// console.log(map([3,4,5], n => n - 2)); // should log: [1, 2, 3]
+
+
+
+// //first attempt
+// //create a function which takes an array and callback and rins callback on each element of aaray
+// function forEach(array, callback) {
+//   for( let i = 0; i < array.length; i++) {
+//    //iterate through the array with a for loop
+//     callback(array[i]); //invoke the callback function passing in the current array element
+//   } 
+// }
+
+// function map(array, call){ //map funct takes two function and returns new array as the result of invoking function on each array
+//   // initialize a new array
+//   // call forEach with the passed in array and new function. Will take an array element.
+//   // invoke the passed in callback function with the element array passed in by forEach
+//   //add return value to array
+//   //return array containing results
+//   const results = [];
+//   forEach(array, function(element) {//since its stored in global memory, dont need 'function' before. also only one parenthesis. array[i] is what is being passed into element
+//   	results.push(call(element))
+// })//missing parenthesis from line 50 goes here
+//   return results
+// }
+
+// console.log(typeof forEach); // should log: 'function'
+// forEach(['a','b','c'], i => console.log(i)); // should log: 'a', 'b', 'c' separately on individual lines
+// console.log(typeof map); // should log: 'function'
+// console.log(map([3,4,5], n => n - 2)); // should log: [1, 2, 3]
 
 //-----------------------------------------------------------------------------------------------------
 
