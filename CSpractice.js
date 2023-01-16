@@ -114,7 +114,7 @@
     // return (num % 2 === 0)
     // }
     // function func2(num) {//use function logic to filter out even numbers
-    return (num % 2 !== 0)
+    //return (num % 2 !== 0)
     // }
 
 //-----------------------------------------------------------------------------------------------------
@@ -183,32 +183,235 @@
 
 //-----------------------------------------------------------------------------------------------------
 
-Challenege: 
+//Challenege: intersection
+
+    // // create a function that compares three input arrays 
+    // //output: new array with elements found in all the inputs
+    // //accumulator = starts as one of our arrays
+    // //loop through array of arrays
+    // //compare current array with acc
+    // //if that element exists in accumulator
+    // //push numbers into new array
+    // //accumatlor assigned to new array
+    // //return acc
+
+    // function intersection(arrays) {
+    //     return arrays.reduce(function(intersection, subArray) {
+    //     subArray.forEach(function(number) {
+    //         let inAll = true;
+    //         for (let i =0; i < arrays.length; i++) {
+    //         if (arrays[i].indexOf(number) === -1) {
+    //             inAll = false;
+    //         }
+    //         }
+    //         if (inAll === true && intersection.indexOf(number) === -1) {
+    //         intersection.push(number);
+    //         }
+    //     });
+    //         return intersection;
+    //     }, [])
+    // }  
+    
+    // // Uncomment these to check your work!
+    // const arr1 = [5, 10, 15, 20];
+    // const arr2 = [15, 88, 1, 5, 7];
+    // const arr3 = [1, 10, 15, 5, 20];
+    // console.log(intersection([arr1, arr2, arr3])); // should log: [5, 15]
 
 
 //-----------------------------------------------------------------------------------------------------
 
-Challenege: 
+//Challenege: union
 
-
+// function union(arrayOfArrays) {
+//     //use reduce to iterate through the outer array of arrays (return evalutated result)
+//     //intiallize empty array to output
+//     return arrayOfArrays.reduce((outputArray, currentArray) => {
+//       //iterate through each array
+//       currentArray.forEach(el => {
+//         //if the element is not present in output array, add it to the outpur array
+//         if (!outputArray.includes(el)) {
+//           outputArray.push(el);
+//         }
+//       })
+//       //return output
+//       return outputArray;
+//     }, [])
+//   }
+//   // Uncomment these to check your work!
+//   const arr1 = [5, 10, 15];
+//   const arr2 = [15, 88, 1, 5, 7];
+//   const arr3 = [100, 15, 10, 1, 5];
+//   console.log(union([arr1, arr2, arr3])); // should log: [5, 10, 15, 88, 1, 7, 100]
 
 //-----------------------------------------------------------------------------------------------------
 
-Challenege: 
+//Challenege: objOfMatches
 
+// function objOfMatches(array1, array2, callback) {
+//     //declare an empty object
+//     const matches = {};
+//       //iteratie through array1
+//     for (let i = 0; i < array1.length; i++) {
+//       //check if the evaluated result of invoking our callback function passing in the current element is strictly equal to its corresponding element in array 2
+//       if (callback(array1[i]) === array2[i]) {
+//         //save the current element as a key in the ojbect and assign it the value of its corresponding element in array 2
+//           matches[array1[i] = array2[i]
+//         }
+//     }
+//     //return the object
+//     return matches
+//   }
+//   // Uncomment these to check your work!
+//   const arr1 = ['hi', 'howdy', 'bye', 'later', 'hello'];
+//   const arr2 = ['HI', 'Howdy', 'BYE', 'later', 'HELLO'];
+//   function uppercaser(str) { return str.toUpperCase(); }
+//   console.log(objOfMatches(arr1, arr2, uppercaser)); // should log: { hi: 'HI', bye: 'BYE', hello: 'HELLO' }
+  
+//-----------------------------------------------------------------------------------------------------
+
+// Challenege: arrToObj
+
+// function arrToObj(array, callback) {
+//     // ADD CODE HERE
+//   return array.reduce((acc, next) => {
+//       return {
+//         ...acc,
+//         [next]: callback(next),
+//       }
+//     }, {})
+//   }
+//   // Uncomment these to check your work!
+//   const arrOfStrings = ['beer', 'glue'];
+//   const capitalize = str => str.toUpperCase();
+//   console.log(arrToObj(arrOfStrings, capitalize)); // should log: { beer: 'BEER', glue: 'GLUE' }
 
 //-----------------------------------------------------------------------------------------------------
 
-Challenege: 
+// Challenege: multiMap
 
+// const multiMap = (arrVals, arrCallbacks) => arrVals.reduce((acc, curr) => {
+//     acc[curr] = arrCallbacks.map(cb => cb(curr));
+//     return acc;
+//   }, {});
+  
+//   // Uncomment these to check your work!
+//   function uppercaser(str) { return str.toUpperCase(); }
+//   function capitalize(str) { return str[0].toUpperCase() + str.slice(1).toLowerCase(); }
+//   function repeater(str) { return str + str; }
+//   const items = ['catfood', 'glue', 'beer'];
+//   const functions = [uppercaser, capitalize, repeater];
+//   console.log(multiMap(items, functions)); // should log: { catfood: ['CATFOOD', 'Catfood', 'catfoodcatfood'], glue: ['GLUE', 'Glue', 'glueglue'], beer: ['BEER', 'Beer', 'beerbeer'] }
 
 //-----------------------------------------------------------------------------------------------------
 
-Challenege: 
+// Challenege: majority
 
-
+// const isOdd = function (num) {
+//     return num % 2 === 1;
+//   };
+  
+//   // Uncomment these to check your work!
+//   const isOdd = function(num) { return num % 2 === 1; };
+//   console.log(majority([1, 2, 3, 4, 5], isOdd)); // should log: true
+//   console.log(majority([2, 3, 4, 5], isOdd)); // should log: false
 
 //-----------------------------------------------------------------------------------------------------
+
+// Challenege: prioritize
+// const filter = str => str[0].toLowerCase() === "s";
+// const arr = ["curb", "rickandmorty", "seinfield", "sunny", "friends"];
+
+// function prioritize(array, callback) {
+//   let newArr = []
+//   array.forEach(ele => {
+//     //better to have positive conditionals
+//     if (callback(ele) === true) {
+//       const index = newArr.filter(callback).length;
+//       console.log(index);
+//       newArr.splice(index, 0, ele);
+//     } else {
+//       newArr.push(ele);
+//     }
+//   });
+//   return newArr;
+// }
+
+// // Uncomment these to check your work!
+// function startsWithS(str) { return str[0].toLowerCase() === 's'; }
+// const tvShows = ['curb', 'rickandmorty', 'seinfeld', 'sunny', 'friends']
+// console.log(prioritize(tvShows, startsWithS)); // should log: ['seinfeld', 'sunny', 'curb', 'rickandmorty', 'friends']
+
+//-----------------------------------------------------------------------------------------------------
+
+// Challenege: countBy
+
+// // input is an array and callback
+// //return an object
+// //access each element of the array and if it is odd keep count and if it is even keep count
+// //will use map to execute a callback function on each array and return a new array with return values from callback
+// //convert array to objects with keys and value counts[]
+
+
+// const countBy = (nums, key) => {
+//     const initialValue = {};
+//     return nums.map((evenOdd, nums) => {
+//       return{
+//         [`${evenOdd}`] : nums,
+//       };
+//     }, initialValue)
+//   }
+  
+//   // Uncomment these to check your work!
+//   function evenOdd(n) {
+//     if (n % 2 === 0) return 'even';
+//     else return 'odd';
+//   }
+//   const nums = [1, 2, 3, 4, 5];
+//   console.log(countBy(nums, evenOdd)); // should log: { odd: 3, even: 2 }
+//-----------------------------------------------------------------------------------------------------
+
+// Challenege: groupBy
+// const groupBy = (array, inputFunc) => array.reduce((a, elm) => {
+//     const key = inputFunc(elm);
+//     if (!a[key]) {
+//       a[key] = [];
+//     }
+//     a[key].push(elm);
+//     return a;
+//   }, {});
+  
+//   // Uncomment these to check your work!
+//   const decimals = [1.3, 2.1, 2.4];
+//   const floored = function(num) { return Math.floor(num); };
+//   console.log(groupBy(decimals, floored)); // should log: { 1: [1.3], 2: [2.1, 2.4] }
+  
+//-----------------------------------------------------------------------------------------------------
+
+
+//Challenege: goodKeys
+
+// function goodKeys(obj, callback){
+//     const arr = [];
+//     for (const [key, value] of Object.entries(obj)) {
+//       if (callback(value)){
+//         arr.push(key);
+//       } 
+//     }
+//     return arr;
+//   }
+  
+//   // Uncomment these to check your work!
+//   const sunny = { mac: 'priest', dennis: 'calculator', charlie: 'birdlaw', dee: 'bird', frank: 'warthog' };
+//   function startsWithBird(str) { return str.slice(0, 4).toLowerCase() === 'bird'; };
+//   console.log(goodKeys(sunny, startsWithBird)); // should log: ['charlie', 'dee']
+
+//-----------------------------------------------------------------------------------------------------
+
+
+
+
+
 
 
 
@@ -284,7 +487,7 @@ Challenege:
     // willCounter();
 
 //-----------------------------------------------------------------------------------------------------
-Challenege: addByX
+//Challenege: addByX
 
     // function addByX(x) {
     //create function addByX that accepts an input

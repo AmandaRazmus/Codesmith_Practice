@@ -66,9 +66,77 @@ Challenge: eitherCallback
 
 Challenge: reduce
 
-Construct your own reduce function that accepts an array, a callback, and an initial value and returns a single value.
+    Construct your own reduce function that accepts an array, a callback, and an initial value and returns a single value.
 
 -----------------------------------------------------------------------------------------------------
+
+Challenge: intersection
+
+    Construct a function intersection that compares input arrays and returns a new array with elements found in all of the inputs. BONUS - Use reduce!
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: union
+
+    Construct a function union that takes an input array of arrays, compares each array, and returns a new flat array that contains all elements. If there are duplicate elements, only add it once to the new array. Preserve the order of the elements starting from the first element of the first input array. BONUS - Use reduce!
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: objOfMatches 
+
+    Construct a function objOfMatches that accepts two arrays and a callback. objOfMatches will build an object and return it. To build the object, objOfMatches will test each element of the first array using the callback to see if the output matches the corresponding element (by index) of the second array. If there is a match, the element from the first array becomes a key in an object, and the element from the second array becomes the corresponding value.
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: arrToObj
+
+    Add code to the function arrToObj in the place marked "ADD CODE HERE" in order to achieve the desired console logs. arrToObj should return an object that has elements from the passed-in array as keys, and the outputs from the callback (when those elements are passed in) as the corresponding values.
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: multiMap
+
+    Construct a function multiMap that will accept two arrays - an array of values and an array of callbacks. multiMap will return an object whose keys match the elements in the array of values. The corresponding values that are assigned to the keys will be arrays consisting of outputs from the array of callbacks, where the input to each callback is the key.
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: majority
+
+    Create a function majority that accepts an array and a callback. The callback will return either true or false. majority will iterate through the array and perform the callback on each element until it can be determined if the majority of the return values from the callback are true. If the number of true returns is equal to the number of false returns, majority should return false.
+
+
+    
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: prioritize
+
+    Create a function prioritize that accepts an array and a callback. The callback will return either true or false. prioritize will iterate through the array and perform the callback on each element, and return a new array, where all the elements that yielded a return value of true come first in the array, and the rest of the elements come second.
+
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: countBy
+
+    Create a function countBy that accepts an array and a callback, and returns an object. countBy will iterate through the array and perform the callback on each element. Each return value from the callback will be saved as a key on the object. The value associated with each key will be the number of times that particular return value was returned.
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: groupBy
+
+    Create a function groupBy that accepts an array and a callback, and returns an object. groupBy will iterate through the array and perform the callback on each element. Each return value from the callback will be saved as a key on the object. The value associated with each key will be an array consisting of all the elements that resulted in that return value when passed into the callback.
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: goodKeys
+
+    Create a function goodKeys that accepts an object and a callback. The callback will return either true or false. goodKeys will iterate through the object and perform the callback on each value. goodKeys will then return an array consisting only the keys whose associated values yielded a true return value from the callback.
+
+-----------------------------------------------------------------------------------------------------
+
+
+
+
 
 
 
