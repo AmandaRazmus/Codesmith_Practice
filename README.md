@@ -72,6 +72,8 @@ Construct your own reduce function that accepts an array, a callback, and an ini
 
 
 
+
+
 //************CLOSURE, SCOPE AND EXECUTION CONTEXT****************
 
 Challenge: createFunction
@@ -102,20 +104,78 @@ Challenge: createFunctionWithInput
 
 Challenge: Scoping
 
-Examine the code for the outer function. Notice that we are returning a function and that function is using variables that are outside of its scope. Uncomment those lines of code. Try to deduce the output before executing.
+    Examine the code for the outer function. Notice that we are returning a function and that function is using variables that are outside of its scope. Uncomment those lines of code. Try to deduce the output before executing.
 
 -----------------------------------------------------------------------------------------------------
 
 Challenge: addByX
 
-Now we are going to create a function addByX that returns a function that will add an input by x.
+    Now we are going to create a function addByX that returns a function that will add an input by x.
 
 -----------------------------------------------------------------------------------------------------
 
 Challenge: once
 
-Write a function once that accepts a callback as input and returns a function. When the returned function is called the first time, it should call the callback and return that output. If it is called any additional times, instead of calling the callback again it will simply return the output value from the first time it was called.
+    Write a function once that accepts a callback as input and returns a function. When the returned function is called the first time, it should call the callback and return that output. If it is called any additional times, instead of calling the callback again it will simply return the output value from the first time it was called.
 
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: after 
+
+    Write a function after that takes the number of times the callback needs to be called before being executed as the first parameter and the callback as the second parameter.
+
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: delay
+
+    Write a function delay that accepts two arguments, a callback and the wait time in milliseconds. Delay should return a function that, when invoked waits for the specified amount of time before executing. HINT - research setTimeout();
+
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: saveOutput
+
+    Create a function saveOutput that accepts a function (that will accept one argument), and a string (that will act as a password). saveOutput will then return a function that behaves exactly like the passed-in function, except for when the password string is passed in as an argument. When this happens, the returned function will return an object with all previously passed-in arguments as keys, and the corresponding outputs as values
+
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: cycleIterator
+
+
+    Create a function cycleIterator that accepts an array, and returns a function. The returned function will accept zero arguments. When first invoked, the returned function will return the first element of the array. When invoked a second time, the returned function will return the second element of the array, and so forth. After returning the last element of the array, the next invocation will return the first element of the array again, and continue on with the second after that, and so forth.
+
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: defineFirstArg
+
+
+    Create a function defineFirstArg that accepts a function and an argument. Also, the function being passed in will accept at least one argument. defineFirstArg will return a new function that invokes the passed-in function with the passed-in argument as the passed-in function's first argument. Additional arguments needed by the passed-in function will need to be passed into the returned function.
+
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: hobbyTracker
+
+    Create a function hobbyTracker that takes an array of hobbies as a parameter and creates a cache object with each hobby as a key. hobbyTracker should return a function that takes a string representing the hobby and an integer representing how many hours practiced as parameters.
+
+    When the returned function is invoked, it should update the cache object adding the value of the passed in integer to the cache at the key corresponding with the passed in 'hobby' then should return the updated cache object. If the returned function is invoked with no arguments, it should reset all values in the cache object to zero and return the string 'tracker has been reset!'
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: dateStamp
+
+    Create a function dateStamp that accepts a function and returns a function. The returned function will accept whatever arguments the passed-in function accepts and return an object with a date key whose value is today's date (not including the time) represented as a human-readable string (see the Date object for conversion methods), and an output key that contains the result from invoking the passed-in function.
+
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: censor   
+
+    Create a function censor that accepts no arguments. censor will return a function that will accept either two strings, or one string. When two strings are given, the returned function will hold onto the two strings as a pair, for future use. When one string is given, the returned function will return the same string, except all instances of a first string (of a saved pair) will be replaced with the second string (of a saved pair).
 
 
 -----------------------------------------------------------------------------------------------------
@@ -123,30 +183,19 @@ Write a function once that accepts a callback as input and returns a function. W
 Challenge: 
 
 
-
 -----------------------------------------------------------------------------------------------------
+
 Challenge: 
 
 
-
 -----------------------------------------------------------------------------------------------------
+
 Challenge: 
 
 
-
 -----------------------------------------------------------------------------------------------------
+
 Challenge: 
-
-
-
------------------------------------------------------------------------------------------------------
-Challenge: 
-
-
-
------------------------------------------------------------------------------------------------------
-Challenge: 
-
 
 
 -----------------------------------------------------------------------------------------------------

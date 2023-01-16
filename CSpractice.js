@@ -3,13 +3,13 @@
 //pluralize solution
 //create a function pluralize that takes an array of strings as input
 // function pluralize(arr) {
-let newArray = []
-//use a single for loop 
-for (let i = 0; i < arr.length; i++){
-  newArray.push(arr[i] + "s")
-  }
-//return a new array with an "s" added to each string in array
-return newArray
+// let newArray = []
+// //use a single for loop 
+// for (let i = 0; i < arr.length; i++){
+//   newArray.push(arr[i] + "s")
+//   }
+// //return a new array with an "s" added to each string in array
+// return newArray
 //   }
   
 //   // Uncomment these to check your work!
@@ -25,7 +25,7 @@ return newArray
 // 	//create a function forEach that takes an array and a callback
 // 	for (let i = 0; i < arr.length; i++) {
 // 	//use a for loop 
-callback(arr[i])
+//callback(arr[i])
 //run the callback on each element of the array
 //    //nothing is returned
 // 	}
@@ -52,7 +52,7 @@ callback(arr[i])
 // function forEach(array, callback) {
 //   for( let i = 0; i < array.length; i++) {
 //    //iterate through the array with a for loop
-callback(array[i]); //invoke the callback function passing in the current array element
+//callback(array[i]); //invoke the callback function passing in the current array element
 //   } 
 // }
 
@@ -82,7 +82,7 @@ callback(array[i]); //invoke the callback function passing in the current array 
 // function forEach(array, callback) {
 //   for( let i = 0; i < array.length; i++) {
 //    //iterate through the array with a for loop
-callback(array[i]); //invoke the callback function passing in the current array element
+//callback(array[i]); //invoke the callback function passing in the current array element
 //   } 
 // }
 
@@ -103,11 +103,11 @@ callback(array[i]); //invoke the callback function passing in the current array 
 //filter array
 
     // function filterArray(array, callback) {
-    const newArray = [];//results go to new array
-    for (let i = 0; i < array.length; i += 1) { //loops through the array
-    if (callback(array[i])) newArray.push(array[i]);//
-    }
-    return newArray;
+    //const newArray = [];//results go to new array
+    //for (let i = 0; i < array.length; i += 1) { //loops through the array
+    //if (callback(array[i])) newArray.push(array[i]);//
+    //}
+    //return newArray;
     // }
     // const arrOfNums = [1, 2, 3, 4, 5];
     // function func1(num) {//use function logic to filter out even numbers 
@@ -118,14 +118,15 @@ callback(array[i]); //invoke the callback function passing in the current array 
     // }
 
 //-----------------------------------------------------------------------------------------------------
+
 // function eitherFilter(array, callback1, callback2) {
 // desired result in an array of numbers containing all elements in the passed-in array that yield a truthy value when passed into either of the two callbacks passed into eitherFilter
 //   const result = []; //result is an array
 //loop over the numbers in the array with a for loop
-for ( let i = 0; i < array.length; i++) {
-  if (callback1(array[i]) || callback2(array[i])) result.push(array[i]);//will need logic for either/or
-}
-return result
+//for ( let i = 0; i < array.length; i++) {
+  //if (callback1(array[i]) || callback2(array[i])) result.push(array[i]);//will need logic for either/or
+//}
+//return result
 //   }
     
 //callback 1 is the swuare root of the array number is odd 
@@ -141,9 +142,9 @@ return result
 // function eitherCallback(callback1, callback2) { //combines two callbcks into one callback and passes that one callback into filter array
 //return a funtion
 //return the boolean respresenting whether each callback is true
-return(element, i, array) => {//here element respresents array[i] below
-  return callback1(element, i, array) || callback2(element, i, array)
-}
+//return(element, i, array) => {//here element respresents array[i] below
+  //return callback1(element, i, array) || callback2(element, i, array)
+//}
 //   }
   
 //   // Uncomment these to check your work!
@@ -162,7 +163,7 @@ return(element, i, array) => {//here element respresents array[i] below
 
 // //-----------------------------------------------------------------------------------------------------
 
-// reduce
+// Challenge: reduce
 // /reduce iterates through array and returns a single value
 // //create a reduce funtction that accespts an array, callback and inital value
 // //return a single value
@@ -182,15 +183,29 @@ return(element, i, array) => {//here element respresents array[i] below
 
 //-----------------------------------------------------------------------------------------------------
 
-//-----------------------------------------------------------------------------------------------------
+Challenege: 
 
 
 //-----------------------------------------------------------------------------------------------------
 
+Challenege: 
+
+
+
 //-----------------------------------------------------------------------------------------------------
+
+Challenege: 
 
 
 //-----------------------------------------------------------------------------------------------------
+
+Challenege: 
+
+
+//-----------------------------------------------------------------------------------------------------
+
+Challenege: 
+
 
 
 //-----------------------------------------------------------------------------------------------------
@@ -207,14 +222,14 @@ return(element, i, array) => {//here element respresents array[i] below
 //Challenge: createFunction
 
 //create functioon createFunction
-    // function createFunction() {
-    //create new funtion
-    function printGreeting(){
-    //return string hello world
-    return 'hello world'
-    }
+    // // function createFunction() {
+    // //create new funtion
+    // function printGreeting(){
+    // //return string hello world
+    // return 'hello world'
+    // }
     //return new function
-    return printGreeting //this returns pringGreeting into createFunction
+    //return printGreeting //this returns pringGreeting into createFunction
     // }
     
     
@@ -230,10 +245,10 @@ return(element, i, array) => {//here element respresents array[i] below
     // function createFunctionWithInput(input) {
     //create new function
     // function printInput(){
-    return input
-    } 
+   // return input
+  //  } 
     // //return function
-    return printInput
+   // return printInput
     // }
 
     // // UNCOMMENT THESE TO TEST YOUR WORK!
@@ -247,12 +262,12 @@ return(element, i, array) => {//here element respresents array[i] below
 //Challenge: Scoping
 
     // function outer() {
-    let counter = 0; // this variable is outside incrementCounter's scope
-    function incrementCounter() {
-    counter++;
-    console.log('counter', counter);
-    }
-    return incrementCounter;
+    // let counter = 0; // this variable is outside incrementCounter's scope
+    // function incrementCounter() {
+    // counter++;
+    // console.log('counter', counter);
+    // }
+    // return incrementCounter;
     // }
     
     // const willCounter = outer();
@@ -273,22 +288,22 @@ Challenege: addByX
 
     // function addByX(x) {
     //create function addByX that accepts an input
-     function addByTwo(num) {
-    //create a function that adds an input by x 
-        return num + x;
-      }
-      //return function
-        return addByTwo;
-    }
+    //  function addByTwo(num) {
+    // //create a function that adds an input by x 
+    //     return num + x;
+    //   }
+    //   //return function
+    //     return addByTwo;
+    // }
         
         
-    const addByTwo = addByX(2);
+   //const addByTwo = addByX(2);
         
         
     // Now call addByTwo with an input of 1 and log the output
-    console.log(addByTwo(1))
+    //console.log(addByTwo(1))
     // Now call addByTwo with an input of 2 and log the output
-    console.log(addByTwo(2))
+    //console.log(addByTwo(2))
 
 
 //-----------------------------------------------------------------------------------------------------
@@ -296,35 +311,35 @@ Challenege: addByX
 
     // function once(cb) {
     //write a function once that accepts a callback as input and returns a function
-    let hasBeenCalled = false;
+    //let hasBeenCalled = false;
     //store a variable that lets js know if we have run the function
-    let cachedResult;
+    //let cachedResult;
     //create a cache that stores the output to be referenced when callback is called
-        function oncifiedCb(...args){
+       // function oncifiedCb(...args){
         //if oncifiedCb hasn't been called: 
-        if (!hasBeenCalled){
-        cachedResult = cb(...args);
+       // if (!hasBeenCalled){
+       // cachedResult = cb(...args);
         //1. invoke cb with args and store result in cachedResult
                 //2. set hasBeenCalled to true
-        hasBeenCalled = true
-        return cachedResult
-        } else{ 
-        return cachedResult
-        //return cached result
-        }   
-    }
-        return oncifiedCb
-    }
+       // hasBeenCalled = true
+    //     return cachedResult
+    //     } else{ 
+    //     return cachedResult
+    //     //return cached result
+    //     }   
+    // }
+    //     return oncifiedCb
+    // }
         
         
-    const addByTwoOnce = once(function(num) {
-    return num + 2;
-    });
+    // const addByTwoOnce = once(function(num) {
+    // return num + 2;
+    // });
         
-    // UNCOMMENT THESE TO TEST YOUR WORK!
-    console.log(addByTwoOnce(5));  //should log 7
-    console.log(addByTwoOnce(10));  //should log 7
-    console.log(addByTwoOnce(9001));  //should log 7
+    // // UNCOMMENT THESE TO TEST YOUR WORK!
+    // console.log(addByTwoOnce(5));  //should log 7
+    // console.log(addByTwoOnce(10));  //should log 7
+    // console.log(addByTwoOnce(9001));  //should log 7
     
 
 //-----------------------------------------------------------------------------------------------------
@@ -336,10 +351,10 @@ Challenege: addByX
 //   let count = 0; //set a counter outside inner function for that function to access
 //   //closure requires us to return a function
 //   return function(...args){
-count += 1;
+//count += 1;
 //   // we need to define a count variable and increment it by 1
 //   if (count >=numOfCalls){
-return cb(...args)
+//return cb(...args)
 //   }
 //   }
 // }
@@ -452,3 +467,99 @@ return cb(...args)
 //     console.log(subFrom20(5)); // should log: 15
 
 //-----------------------------------------------------------------------------------------------------
+
+// Challenge: hobbyTracker
+
+// function hobbyTracker(hobbies) {
+//     const cache = {};
+//     for ( let hobby of hobbies){
+//         cache[hobby] = 0;   
+//     }
+//     return function(hobbies, hours) {
+//               if (hobbies && hours){
+//                   cache[hobbies] += hours;
+//                   return cache;
+//                }
+//               else {
+//                   for (let hobby in cache) {
+//                       cache[hobby] = 0;
+//                   }
+//                }
+//                return 'tracker has been reset!';
+// }
+// }
+
+// Uncomment the code below to check your code:
+// const updateHobbies = hobbyTracker(['yoga', 'baking', 'piano']);
+// updateHobbies('yoga', 2);
+// updateHobbies('baking', 4);
+// updateHobbies('yoga', 1);
+// console.log(updateHobbies('piano', 2)); // --> { yoga: 3, baking: 4, piano: 2 }
+// console.log(updateHobbies()); // --> 'tracker has been reset!'
+// console.log(updateHobbies('baking', 1)); // --> { yoga: 0, baking: 1, piano: 0}
+
+//-----------------------------------------------------------------------------------------------------
+
+// Challenge: dateStamp
+
+// function dateStamp(func) {
+//     const logTime = {};
+//     function stamping(input) {
+//       logTime.date = new Date();
+//       logTime.output = func(input);
+//       return logTime;
+//     }
+//     return stamping;
+//   }
+  
+//   // Uncomment these to check your work!
+//   const stampedMultBy2 = dateStamp(n => n * 2);
+//   console.log(stampedMultBy2(4)); // should log: { date: (today's date), output: 8 }
+//   console.log(stampedMultBy2(6)); // should log: { date: (today's date), output: 12 }
+
+//-----------------------------------------------------------------------------------------------------
+
+//Challenge: censor
+// function censor() {
+//     const phrases = new Map();
+//     function actualFn(...args) {
+//       if (args.length === 2) {
+//         phrases.set(args[0], args[1]);
+//       } else {
+//         let input = args[0];
+//         for (let [key, value] of phrases) {
+//           let regex = new RegExp(key, "g");
+//           input = input.replace(regex, value);
+//         }
+//         return input;
+//       }
+//     }
+//     return actualFn;
+//   }
+  
+//   // Uncomment these to check your work!
+//   const changeScene = censor();
+//   changeScene('dogs', 'cats');
+//   changeScene('quick', 'slow');
+//   console.log(changeScene('The quick, brown fox jumps over the lazy dogs.')); // should log: 'The slow, brown fox jumps over the lazy cats.'
+
+//-----------------------------------------------------------------------------------------------------
+
+
+
+
+//******************NEW SECTION: 
+
+
+Challenge: 
+
+
+//-----------------------------------------------------------------------------------------------------
+
+Challenge: 
+
+
+
+//-----------------------------------------------------------------------------------------------------
+
+
