@@ -751,18 +751,102 @@
 
 
 
-//******************NEW SECTION: 
+//******************RECURSION*************************
+
+// Challenge: repeater
+
+// console.log('Hello, world!');
+
+// function repeater(char) {
+//   //base case: if input string has a length of 5, return input string
+// if(char.length === 5) return char
+//   //recursive case: calling the function recursively with input string + first char of input string
+//   return repeater(char + char[0])
+// }
+
+// // To check if you've completed the challenge, uncomment these console.logs!
+// console.log(repeater('g'));
+// console.log(repeater('j'));
 
 
-Challenge: 
 
 
 //-----------------------------------------------------------------------------------------------------
 
+// Challenge: factorial
+
+// function factorial(num, product = 1) {
+//     //base case: if num is equal or less than 1, return recursive case
+//       if (num === 1) return product;
+//       //multiply the product and numb into new product
+//       const newProduct = product * num;
+//       //decrement num
+//       const newNum = num -1
+//       //recursive case: return total factorial of first number
+//       return factorial(newNum, newProduct)
+//     }
+    
+//     // To check if you've completed the challenge, uncomment these console.logs!
+//     console.log(factorial(4)); // -> 24
+//     console.log(factorial(6)); // -> 720
+    
+
+//-----------------------------------------------------------------------------------------------------
+
+// Challenge: getLength
+
+// function getLength(array, length = 0) {
+//     //base case: once the length of the array is reached, return the array
+//       if (array[0] === undefined) return length;
+//       //increase length if length of array is not 0
+//       length++
+//       //call getLength again and pass in length
+//       return getLength(array.slice(1), length);
+//       //return end result(length)
+    
+//     }
+    
+//     // To check if you've completed the challenge, uncomment these console.logs!
+//     console.log(getLength([1])); // -> 1
+//     console.log(getLength([1, 2])); // -> 2
+//     console.log(getLength([1, 2, 3, 4, 5])); // -> 5
+//     console.log(getLength([])); // -> 0
+    
+
+//-----------------------------------------------------------------------------------------------------
 Challenge: 
 
 
 
 //-----------------------------------------------------------------------------------------------------
+Challenge: 
 
+
+
+//-----------------------------------------------------------------------------------------------------
+Challenge: 
+
+
+
+//-----------------------------------------------------------------------------------------------------
+Challenge: 
+
+
+
+//-----------------------------------------------------------------------------------------------------
+Challenge: 
+
+
+
+//-----------------------------------------------------------------------------------------------------
+Challenge: 
+
+
+
+//-----------------------------------------------------------------------------------------------------
+Challenge: 
+
+
+
+//-----------------------------------------------------------------------------------------------------
 

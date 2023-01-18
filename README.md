@@ -246,6 +246,30 @@ Challenge: censor
     Create a function censor that accepts no arguments. censor will return a function that will accept either two strings, or one string. When two strings are given, the returned function will hold onto the two strings as a pair, for future use. When one string is given, the returned function will return the same string, except all instances of a first string (of a saved pair) will be replaced with the second string (of a saved pair).
 
 
+
+
+*******RECURSION***********
+
+Challenge: repeater
+
+Write a function that takes an input character and returns that character repeated 5 times using recursion. For example, if the input is 'g', then the output should be 'ggggg'.
+
+Input: {String} char
+Output: {String}
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: factorial
+
+    Write a function that returns the factorial of a number.
+
+EXAMPLE4! = 4 * 3 * 2 * 1 = 24, so calling factorial(4) should return 24.
+
+-----------------------------------------------------------------------------------------------------
+
+Challenge: getLength
+
+    Get the length of an array using recursion without accessing its length property.
 -----------------------------------------------------------------------------------------------------
 
 Challenge: 
