@@ -814,24 +814,104 @@
     
 
 //-----------------------------------------------------------------------------------------------------
-Challenge: 
+// Challenge: POW
+
+// function pow(base, exponent) { 
+//     if (exponent == 0) return 1; 
+//     else return base * pow(base, exponent - 1); 
+// }
+
+// console.log(pow(2, 3)); // → 8
+
+//power(2, 3) => return 2 * power(2, 2)
+//power(2, 2) => return 2 * power(2, 1)
+//power(2, 1) => return 2 * power(2, 0)
+//power(2, 0) => 1
+
+//Now that we know power(2, 0) = 1, we can go all the way back
+
+//power(2, 1) => return 2 * 1
+//power(2, 2) => return 2 * 2
+//power(2, 3) => return 2 * 4
+//8
+
+// To check if you've completed the challenge, uncomment these console.logs!
+// console.log(pow(2, 4)); // -> 16
+// console.log(pow(3, 5)); // -> 243
 
 
 
 //-----------------------------------------------------------------------------------------------------
-Challenge: 
+Challenge: flow
 
-
+// function flow(input, funcArray) {
+//     //base case: if no funcs in funcArray, return input
+//       if(funcArray.length === 0) return input;
+//       //recursive case:
+//       //invoke first func in funcArray, using input as argument
+//       const output = funcArray[0](input);
+//       //recursively call flow using output of first func call as input and funcArray without first func as funcArray
+//       return flow(output, funcArray.slice(1));
+//     }
+    
+//     // To check if you've completed the challenge, uncomment this code!
+//     function multiplyBy2(num) { return num * 2; }
+//     function add7(num) { return num + 7; }
+//     function modulo4(num) { return num % 4; }
+//     function subtract10(num) { return num - 10; }
+//     const arrayOfFunctions = [multiplyBy2, add7, modulo4, subtract10];
+//     console.log(flow(2, arrayOfFunctions)); // -> -7
 
 //-----------------------------------------------------------------------------------------------------
-Challenge: 
+//Challenge: flow
 
-
+// function flow(input, funcArray) {
+//     //base case: if no funcs in funcArray, return input
+//       if(funcArray.length === 0) return input;
+//       //recursive case:
+//       //invoke first func in funcArray, using input as argument
+//       const output = funcArray[0](input);
+//       //recursively call flow using output of first func call as input and funcArray without first func as funcArray
+//       return flow(output, funcArray.slice(1));
+//     }
+    
+//     // To check if you've completed the challenge, uncomment this code!
+//     function multiplyBy2(num) { return num * 2; }
+//     function add7(num) { return num + 7; }
+//     function modulo4(num) { return num % 4; }
+//     function subtract10(num) { return num - 10; }
+//     const arrayOfFunctions = [multiplyBy2, add7, modulo4, subtract10];
+//     console.log(flow(2, arrayOfFunctions)); // -> -7
 
 //-----------------------------------------------------------------------------------------------------
-Challenge: 
+//Challenge: 
+
+// function shuffleCards(topHalf, bottomHalf,results = []) {
+//     if(topHalf.length===0&&bottomHalf.length===0)return results;
+//     if (topHalf.length!==0) {
+//     results.push(topHalf[0])
+//     } 
+//     if (bottomHalf.length!==0) {
+//       results.push(bottomHalf[0])
+//     }
+//     return shuffleCards(topHalf.slice(1), bottomHalf.slice(1),results);
+// }
 
 
+
+
+// // UNCOMMENT TO TEST YOUR WORK
+// const topHalf = ['Queen of Diamonds', 'Five of Hearts', 'Ace of Spades', 'Eight of Clubs'];
+// const bottomHalf = ['Jack of Hearts', 'Ten of Spades'];
+// console.log(shuffleCards(topHalf, bottomHalf));
+  /*-> ['Queen of Diamonds',
+        'Jack of Hearts',
+        'Five of Hearts',
+        'Ten of Spades',
+        'Ace of Spades',
+        'Eight of Clubs',
+      ]
+  */
 
 //-----------------------------------------------------------------------------------------------------
 Challenge: 

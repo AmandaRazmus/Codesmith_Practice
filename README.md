@@ -272,19 +272,50 @@ Challenge: getLength
     Get the length of an array using recursion without accessing its length property.
 -----------------------------------------------------------------------------------------------------
 
-Challenge: 
+Challenge: POW
 
+    Write a function that takes two inputs, a base and an exponent, and returns the expected value of base ^ exponent. For instance, if our base is 2 and our exponent is 3, then return 8 because 2^3 = 2*2*2 = 8.
 
+Input 1: {Number} base - base number raised to the exponent
+Input 2: {Number} exponent - exponent the base is raised to
+Output: {Number} - expected value of base raised to exponent
 -----------------------------------------------------------------------------------------------------
 
-Challenge: 
+Challenge: flow
 
+    Write a function that takes an array of functions and a number that will be piped through all those functions. The input number passes through the first function, whose output is passed as input to the second function, whose output is passed as input to the third function, and so on. Use recursion to return the final output of the last function in the array.
 
+    Input 1: {Number} input - number flowing through all functions
+    Input 2: {Array} funcArray - array of functions to pass input through
+    Output: {Number} - final output of final function
 -----------------------------------------------------------------------------------------------------
 
-Challenge: 
+Challenge: shuffleCards
 
+    You are creating a card game application with your friend.
 
+She already wrote a function that divides the deck of cards into top and bottom halves, but needs help writing a function that shuffles the two halves together again.
+
+Challenge
+Write a function that takes two arrays as inputs, representing the top and bottom halves of a deck of cards, and shuffles them together. The function will return a single array containing the elements from both input arrays interleaved, like so:
+
+the first element should be the first element of the first input array,
+
+the second element should be the first element of the second input array,
+
+the third element should be the second element of the first input array,
+
+the fourth element should be the second element of the second array,
+
+and so on.
+
+The arrays may be of different lengths. After interleaving the elements of the input arrays, any remaining elements should be appended to the end of the array.
+
+This problem can be solved in many ways, but try to solve it with recursion!
+
+Input1: {Array} topHalf - cards in the top half of the deck
+Input2: {Array} bottomHalf - cards in the bottom half of the deck
+Output: {Array} - the top and bottom halves of the deck interleaved together, with any remaining cards app
 -----------------------------------------------------------------------------------------------------
 
 Challenge: 
