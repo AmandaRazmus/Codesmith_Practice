@@ -317,8 +317,37 @@ Input1: {Array} topHalf - cards in the top half of the deck
 Input2: {Array} bottomHalf - cards in the bottom half of the deck
 Output: {Array} - the top and bottom halves of the deck interleaved together, with any remaining cards app
 -----------------------------------------------------------------------------------------------------
+//Challenge: cascade
 
-Challenge: 
+// Write a function cascade that takes a positive integer and prints a cascade of this integer. Hint - 
+// this very challenging problem can be solved with and without string manipulation!
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+//Challenge: 
+Challenge: makePerson
+Create a function that accepts two inputs (name and age) and returns an object. Let's call this function makePerson. This function will:
+Create an empty object
+Add a name property to the newly created object with its value being the name argument passed into the function
+Add an age property to the newly created object with its value being the "age" argument passed into the function
+Return the object
+
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+//Challenge: 
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+//Challenge: 
+
 
 
 -----------------------------------------------------------------------------------------------------

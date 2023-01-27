@@ -1,4 +1,4 @@
-//CALLBACKS AND HIGHER ORDER FUNCTIONS (reviewing all problems for a second time for solidifying learning)
+////CALLBACKS AND HIGHER ORDER FUNCTIONS (reviewing all problems for a second time for solidifying learning)
 
 //pluralize solution
 //create a function pluralize that takes an array of strings as input
@@ -842,27 +842,6 @@
 
 
 //-----------------------------------------------------------------------------------------------------
-Challenge: flow
-
-// function flow(input, funcArray) {
-//     //base case: if no funcs in funcArray, return input
-//       if(funcArray.length === 0) return input;
-//       //recursive case:
-//       //invoke first func in funcArray, using input as argument
-//       const output = funcArray[0](input);
-//       //recursively call flow using output of first func call as input and funcArray without first func as funcArray
-//       return flow(output, funcArray.slice(1));
-//     }
-    
-//     // To check if you've completed the challenge, uncomment this code!
-//     function multiplyBy2(num) { return num * 2; }
-//     function add7(num) { return num + 7; }
-//     function modulo4(num) { return num % 4; }
-//     function subtract10(num) { return num - 10; }
-//     const arrayOfFunctions = [multiplyBy2, add7, modulo4, subtract10];
-//     console.log(flow(2, arrayOfFunctions)); // -> -7
-
-//-----------------------------------------------------------------------------------------------------
 //Challenge: flow
 
 // function flow(input, funcArray) {
@@ -883,8 +862,10 @@ Challenge: flow
 //     const arrayOfFunctions = [multiplyBy2, add7, modulo4, subtract10];
 //     console.log(flow(2, arrayOfFunctions)); // -> -7
 
+
+
 //-----------------------------------------------------------------------------------------------------
-//Challenge: 
+//Challenge: shuffleCards
 
 // function shuffleCards(topHalf, bottomHalf,results = []) {
 //     if(topHalf.length===0&&bottomHalf.length===0)return results;
@@ -914,12 +895,53 @@ Challenge: flow
   */
 
 //-----------------------------------------------------------------------------------------------------
-Challenge: 
+//Challenge: cascade
+
+// cascade(111)
+// function cascade(number) {
+//         if(number>9) {
+//           let newNumber =Math.floor(number/10);
+//           console.log(number);
+//           cascade(newNumber);
+//         };
+//           console.log(number);
+//         };
+
+
+// // Uncomment to test your work!
+//cascade(111)
+
+
+
+
+
+
+
+//*****************OBJECT ORIENTED PROGRAMMING*************************
+
+
+
+
 
 
 
 //-----------------------------------------------------------------------------------------------------
-Challenge: 
+// Challenge: makePerson
+
+// function makePerson(name, age) {
+// 	const person = {};
+//   person.name = name;
+//   person.age = age;
+//   return person;
+// }
+
+// const vicky = makePerson('Vicky', 24);
+
+
+// // Uncomment these lines to check your work!
+// console.log(vicky.name); // -> Logs 'Vicky'
+// console.log(vicky.age); // -> Logs 24
+
 
 
 
