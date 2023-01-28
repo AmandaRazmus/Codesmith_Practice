@@ -339,14 +339,19 @@ Return the object
 
 -----------------------------------------------------------------------------------------------------
 
-//Challenge: 
+//Challenge: personStore
+
+Inside personStore object, create a property greet where the value is a function that logs "hello".
 
 
 
 -----------------------------------------------------------------------------------------------------
 
 
-//Challenge: 
+//Challenge: personFromPersonStore
+
+
+Create a function personFromPersonStore that takes as input a name and an age. When called, the function will create person objects using the Object.create method on the personStore object.
 
 
 
